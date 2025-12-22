@@ -24,3 +24,39 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  /* Global executive */
+  --bg:#FFFFFF;
+  --surface:#FFFFFF;
+  --text:#0B1220;
+  --muted:#5B6472;
+  --border:rgba(11,18,32,.10);
+
+  /* Logo red */
+  --brand:#EC1B24;
+  --brand2:#B90F16;
+
+  --shadow: 0 18px 60px rgba(11,18,32,.10);
+  --shadow2: 0 28px 90px rgba(11,18,32,.12);
+}
+
+html, body{
+  direction: rtl;
+  text-align: right;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* subtle corporate background */
+.corp-bg{
+  background:
+    radial-gradient(900px 420px at 85% 15%, rgba(236,27,36,.10), transparent 60%),
+    radial-gradient(760px 360px at 10% 95%, rgba(11,18,32,.06), transparent 60%),
+    linear-gradient(#fff,#fff);
+}
+
+
