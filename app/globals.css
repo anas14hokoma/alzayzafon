@@ -60,3 +60,23 @@ html, body{
 }
 
 
+/* ===== Logo watermark background for whole site ===== */
+.site-bg {
+  position: relative;
+  isolation: isolate;
+}
+
+.site-bg::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+
+  background-image: url("/images/logo.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 760px;
+
+  opacity: 0.05;
+  pointer-events: none;
+}
