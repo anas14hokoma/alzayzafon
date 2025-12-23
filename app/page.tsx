@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
-const PHONE = "0945513938";
+const PHONE = "0913260766";
 
 // Coordinates: 32°07'33.1"N 20°04'52.4"E  ->  32.125861, 20.081222
 const LAT = 32.125861;
@@ -17,7 +17,7 @@ export default function Home() {
   const mapsEmbed = `https://www.google.com/maps?q=${LAT},${LNG}&z=16&output=embed`;
 
   return (
-    <div className="min-h-screen bg-[var(--bg)] text-[var(--text)]">
+<div className="min-h-screen text-[var(--text)]">
       {/* ===================== HERO ===================== */}
       <section className="relative overflow-hidden">
         {/* Global background */}
@@ -27,16 +27,7 @@ export default function Home() {
 
         <div className="relative mx-auto max-w-7xl px-6 pt-14 pb-10 md:pt-20 md:pb-16">
           {/* Top badge */}
-          <div className="inline-flex flex-wrap items-center gap-3 rounded-full border border-[var(--border)] bg-[var(--surface)] px-4 py-2 shadow-sm">
-            <Dot />
-            <span className="text-sm font-semibold text-[var(--muted)]">
-              استيراد غذائي عالمي • خبرة +21 سنة
-            </span>
-            <span className="h-4 w-px bg-[var(--border)]" />
-            <span className="text-sm font-extrabold text-[var(--text)]">
-              Global Food Import • 21+ Years
-            </span>
-          </div>
+          
 
           <div className="mt-8 grid items-center gap-10 md:grid-cols-12">
             {/* RIGHT: headline */}
@@ -96,7 +87,6 @@ export default function Home() {
               <div className="mt-10 grid grid-cols-3 gap-4">
                 <KPI value="21+" label="سنوات خبرة" />
                 <KPI value="10+" label="دول استيراد" />
-                <KPI value="B2B" label="توريد للجملة" />
               </div>
 
               {/* ✅ سطر معلومات سريع تحت الهيرو (مفيد للشركة) */}
@@ -139,9 +129,7 @@ export default function Home() {
                       </div>
 
                       <div className="shrink-0 rounded-xl border border-[var(--border)] bg-[var(--surface)] px-4 py-3 text-center">
-                        <div className="text-[10px] font-extrabold text-[var(--muted)]">
-                          SINCE
-                        </div>
+                        <div className="text-[10px] font-extrabold text-[var(--muted)]">منذ                         </div>
                         <div className="text-xl font-extrabold">2004</div>
                       </div>
                     </div>
