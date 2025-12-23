@@ -15,8 +15,8 @@ export default function Footer() {
           <div>
             <div className="font-extrabold">تواصل معنا</div>
             <div className="mt-3 space-y-2 text-sm font-semibold text-[var(--muted)]">
-              <a className="block hover:text-[var(--brand)]" href="tel:0945513938">
-                📞 0945513938
+              <a className="block hover:text-[var(--brand)]" href="tel:0913260766">
+                📞 0913260766
               </a>
               <div>📍 المعرض التجاري – بنغازي – ليبيا</div>
               <div>📌 32°07'33.1&quot;N 20°04'52.4&quot;E</div>
